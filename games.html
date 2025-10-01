@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Games</title>
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="css/estilo3.css">
+    <link rel="stylesheet" href="css/dark.css">
+    <link rel="stylesheet" href="css/upbar.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Script JS -->
+    <script src="js/animacaoindex2.js" defer></script>
+</head>
+
+<body>
+    <div id="transitionOverlay"></div>
+    <canvas id="bolhasCanvas"></canvas>
+
+    <div class="pai">
+        
+        <div class="buttonspart">
+            <div class="botoes2">
+                <a class="botao" href="sobre.html"><img class="icon-button" src="img/about-icon.png"
+                        alt="house_icon"> Sobre </a>
+                <a class="botao" href="games.html"><img class="icon-button" src="img/game-icon.png"
+                        alt="house_icon"> Games feitos por mim</a>
+                <a class="botao" href="sites.html"><img class="icon-button" src="img/game-icon.png"
+                    alt="house_icon"> Sites</a>
+
+                
+            </div>
+        </div>
+
+        <div class="vidro">
+            <div class="centralizar">
+                <div class="caixa">
+                    Games
+                </div>
+            </div>
+
+            <div class="games">
+        <div class="games-grid">
+            <div class="gameFrame">
+                <a href="Farm.html" class="botaoGame">
+                    <img src="img/mario1.png" alt="Super Mario Farm">
+                </a>
+                Super Mario Farm
+            </div>
+        </div>
+
+            <div class="games-grid">
+                <div class="gameFrame">
+                    <a href="World.html" class="botaoGame">
+                        <img src="https://external-preview.redd.it/YtESMu_ALKYOGaT6eYLEthANJxC6BnMwkyrXknMOc2s.png?auto=webp&s=5e2e0110bf9ae1873271b7416852bb84ab664802" alt="Super Mario World">
+                    </a>
+                    Super Mario World
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
+
+    </div>
+
+</body>
+<style>
+.games-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+.gameFrame {
+    flex: 0 1 calc(25% - 24px); /* 4 por linha, com gap */
+    box-sizing: border-box;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 1100px) {
+    .gameFrame { flex: 0 1 calc(33.33% - 24px); }
+}
+@media (max-width: 800px) {
+    .gameFrame { flex: 0 1 calc(50% - 24px); }
+}
+@media (max-width: 500px) {
+    .gameFrame { flex: 0 1 100%; }
+}
+</style>
+
+</html>
